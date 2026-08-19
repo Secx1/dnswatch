@@ -6,3 +6,4 @@ Development milestones for the offline DNS log analyzer.
 - 2026-04-11: milestone 3 - Zeek parser, heuristics, output formats, tests, and docs.
 - 2026-05-24: milestone 4 - Zeek parser, heuristics, output formats, tests, and docs.
 - 2026-07-02: milestone 5 - Zeek parser, heuristics, output formats, tests, and docs.
+- 2026-08-19: milestone 6 - Zeek parser, heuristics, output formats, tests, and docs.
