@@ -1,0 +1,12 @@
+#separator \x09
+#set_separator ,
+#empty_field (empty)
+#unset_field -
+#path dns
+#open 2026-09-30-00-00-00
+#fields ts	id.orig_h	query	rcode
+1.0	10.0.0.5	cdn.example.com	NOERROR
+2.0	10.0.0.5	api.example.com	NOERROR
+3.0	10.0.0.5	very-long-label-used-for-a-local-fixture.example.invalid	NXDOMAIN
+4.0	10.0.0.5	very-long-label-used-for-a-local-fixture.example.invalid	NXDOMAIN
+#close 2026-09-30-00-00-04

@@ -16,8 +16,8 @@ rows are skipped rather than executed.
 ## Usage
 
 ```bash
-python -m dnswatch.cli sample/dns.log --format table
-python -m dnswatch.cli sample/dns.log --format sarif --fail-on medium > results.sarif
+python -m dnswatch.cli examples/dns.log --format table
+python -m dnswatch.cli examples/dns.log --format sarif --fail-on medium > results.sarif
 ```
 
 Output formats are table, JSON, and SARIF. The test suite uses synthetic logs
@@ -31,3 +31,6 @@ python -m unittest discover -s tests -v
 
 Use this project only with logs and systems you are authorized to analyze.
 
+## License
+
+MIT
