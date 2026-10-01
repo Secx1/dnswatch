@@ -17,6 +17,10 @@ detect malware. Heuristics can produce false positives and should be reviewed
 by an authorized analyst. Input is bounded to 5 MiB by default, and malformed
 rows are skipped rather than executed.
 
+**Research track:** threat intelligence / malware-analysis triage and incident
+response analytics. It produces explainable weak signals for an authorized
+analyst; it does not claim to identify malware or reconstruct an incident alone.
+
 ## Usage
 
 ```bash
