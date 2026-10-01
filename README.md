@@ -21,6 +21,26 @@ rows are skipped rather than executed.
 response analytics. It produces explainable weak signals for an authorized
 analyst; it does not claim to identify malware or reconstruct an incident alone.
 
+## At a glance
+
+| Concern | Behavior |
+| --- | --- |
+| Input | Zeek `dns.log` TSV, including synthetic fixtures for repeatable tests |
+| Network | None; the analyzer never resolves domains or sends packets |
+| Output | Table for triage, JSON for pipelines, or SARIF for finding ingestion |
+| Safety | Read-only parsing with a 5 MiB default input bound and skipped malformed rows |
+
+## Review workflow
+
+1. Export the relevant Zeek DNS log from an authorized environment and retain
+   its collection window and sensor context.
+2. Run the analyzer with the default thresholds, then review the raw rows behind
+   each signal (long labels, entropy, repetition, NXDOMAIN rate, or TLD list).
+3. Correlate weak signals with approved telemetry such as endpoint, proxy, or
+   identity logs; a signal alone is not an incident conclusion.
+4. Record the decision and any threshold changes, then rerun against a bounded
+   fixture before promoting a detection rule.
+
 ## Usage
 
 ```bash
