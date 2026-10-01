@@ -2,7 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/Secx1/dnswatch?display_name=tag)](https://github.com/Secx1/dnswatch/releases)
 [![License](https://img.shields.io/github/license/Secx1/dnswatch)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/Secx1/dnswatch?style=flat)](https://github.com/Secx1/dnswatch/stargazers)
+[![Stars](https://img.shields.io/github/stars/Secx1/dnswatch?style=flat)](https://github.com/Secx1/dnswatch)
 
 `dnswatch` is an offline, read-only analyzer for Zeek `dns.log` TSV files. It
 looks for explainable signals that are useful during triage:
